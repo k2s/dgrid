@@ -73,11 +73,11 @@ function(declare, domGeometry, registry){
 			//		some Dijit layout widgets which assume its existence.
 		},
 		
-		getParent: function() {
+		getParent: function(){
 			// summary:
 			//		Analogue of _WidgetBase#getParent for compatibility with for example
-			//		dijit._KeyNavContainer.		  
-		  return registry.getEnclosingWidget(this.domNode.parentNode);
-		}		
+			//		dijit._KeyNavContainer.
+			return registry.getEnclosingWidget(this.domNode.parentNode);
+		}
 	});
 });
